@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "transit-sites"
+require "transit/sites/version"
 
 Gem::Specification.new do |s|
   s.name        = "transit-sites"
@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.add_dependency("transit", ">= 0.0.3")
+  s.add_runtime_dependency("transit", ">= 0.0.3")
   
 end
