@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["brent@kurbmedia.com"]
   s.homepage    = "https://github.com/transitcms/sites"
   s.summary     = %q{Multi-site extension for the Transit CMS engine.}
-  s.description = %q{Extends the Transit CMS engine to support multiple sites within one application. Useful for subdomains etc.}
+  s.description = %q{Extends the Transit CMS engine to support multiple sites within one application.}
 
   s.rubyforge_project = "transit-sites"
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.add_runtime_dependency("transit", ">= 0.0.3")
+  s.add_runtime_dependency("transit", ">= 0.1.0")
   
 end
