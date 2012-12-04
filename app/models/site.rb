@@ -6,6 +6,6 @@ class Site
   field :domain,    :type => String
   field :subdomain, :type => Boolean, :default => false
   
-  references_many :pages
+  has_many :pages
   
 end

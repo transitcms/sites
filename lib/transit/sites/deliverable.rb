@@ -8,7 +8,7 @@ module Transit
       extend ActiveSupport::Concern
       
       included do
-        referenced_in :site
+        belongs_to :site
       end
       
     end # Deliverable
