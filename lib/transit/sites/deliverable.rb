@@ -8,7 +8,7 @@ module Transit
       extend ActiveSupport::Concern
       
       included do
-        belongs_to :site
+        belongs_to :site, class_name: 'Transit::Site'
       end
       
     end # Deliverable
