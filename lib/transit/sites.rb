@@ -11,5 +11,5 @@ Transit.on_definition(:page) do
 end
 
 Transit::Menu.class_eval do
-  belongs_to :site
+  belongs_to :site, class_name: 'Transit::Site'
 end
